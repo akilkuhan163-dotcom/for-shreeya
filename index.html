@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Shreeya 🌸</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:wght@300;400&display=swap">
+<style>
+:root{--base1:#fff6f1;--base2:#ffe9ef;--text:#4a2038;--glass:rgba(255,255,255,.5);--edge:rgba(255,255,255,.85);--g1:#d6457a;--g2:#a35bd6;--shadow:rgba(170,60,110,.25);--serif:'Playfair Display',Georgia,serif;--sans:'Poppins',system-ui,sans-serif;--o1:#ff8fb8;--o2:#ffc2a8;--o3:#c9a7ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--base1:#1a0f24;--base2:#2a1233;--text:#ffeaf2;--glass:rgba(255,255,255,.08);--edge:rgba(255,255,255,.22);--g1:#ff9cc2;--g2:#c9a7ff;--shadow:rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme="dark"]{--base1:#1a0f24;--base2:#2a1233;--text:#ffeaf2;--glass:rgba(255,255,255,.08);--edge:rgba(255,255,255,.22);--g1:#ff9cc2;--g2:#c9a7ff;--shadow:rgba(0,0,0,.45);color-scheme:dark}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;height:100%;overflow:hidden;font-family:var(--sans);font-weight:300;color:var(--text);background:linear-gradient(160deg,var(--base1),var(--base2));display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);opacity:.6;z-index:0;transition:background 1.6s ease;animation:dr 16s ease-in-out infinite alternate}
+.a{width:62vmin;height:62vmin;background:var(--o1);top:-15vmin;left:-15vmin}
+.b{width:55vmin;height:55vmin;background:var(--o2);bottom:-12vmin;right:-12vmin;animation-delay:-7s}
+.c{width:42vmin;height:42vmin;background:var(--o3);top:35%;left:55%;animation-delay:-3s}
+@keyframes dr{to{transform:translate(9vmin,7vmin) scale(1.18)}}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+#stage{position:relative;z-index:3;width:90%;max-width:460px;touch-action:pan-y}
+.scene{max-height:76vh;overflow:auto;background:var(--glass);border:1px solid var(--edge);backdrop-filter:blur(20px) saturate(1.3);-webkit-backdrop-filter:blur(20px) saturate(1.3);border-radius:30px;padding:42px 28px 36px;text-align:center;box-shadow:0 24px 70px var(--shadow),inset 0 1px 0 var(--edge)}
+.iR{animation:iR .55s cubic-bezier(.2,.8,.2,1) both}.iL{animation:iL .55s cubic-bezier(.2,.8,.2,1) both}
+.oL{animation:oL .3s ease both}.oR{animation:oR .3s ease both}
+@keyframes iR{from{opacity:0;transform:translateX(70px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes iL{from{opacity:0;transform:translateX(-70px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes oL{to{opacity:0;transform:translateX(-70px) scale(.96)}}
+@keyframes oR{to{opacity:0;transform:translateX(70px) scale(.96)}}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,7.5vw,2.5rem);margin:0 0 18px;line-height:1.2;background:linear-gradient(100deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--g1)}
+p{font-size:1.04rem;line-height:1.9;margin:0}
+.rs{list-style:none;padding:0;margin:0}
+.rs li{padding:12px 14px;margin:9px 0;border-radius:16px;background:var(--glass);border:1px solid var(--edge);opacity:0;animation:li .8s ease forwards;line-height:1.6;font-size:.98rem}
+@keyframes li{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sign{font-family:var(--serif);font-style:italic;margin-top:20px;color:var(--g1)}
+#nav{position:fixed;z-index:4;bottom:calc(22px + env(safe-area-inset-bottom,0px));left:0;right:0;display:flex;align-items:center;justify-content:center;gap:16px}
+#nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--edge);background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--text);font-size:1.3rem;cursor:pointer}
+#nav button:active{transform:scale(.92)}
+.dots{display:flex;gap:7px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--text);opacity:.25;transition:.4s}
+.dots i.on{opacity:.9;width:20px;border-radius:6px;background:var(--g1)}
+#hint{position:fixed;z-index:4;top:calc(18px + env(safe-area-inset-top,0px));left:0;right:0;text-align:center;font-size:.8rem;letter-spacing:.12em;opacity:.55;text-transform:uppercase}
+.fl{position:fixed;z-index:12;pointer-events:none;transform:translate(-50%,-50%) scale(0);animation:pop 3s ease-out forwards}
+@keyframes pop{0%{transform:translate(-50%,-50%) scale(0) rotate(-25deg);opacity:0}15%{transform:translate(-50%,-50%) scale(1.3) rotate(8deg);opacity:1}30%{transform:translate(-50%,-50%) scale(1)}100%{transform:translate(-50%,-170%) rotate(12deg);opacity:0}}
+body:not(.ready) #stage,body:not(.ready) #nav,body:not(.ready) #hint{opacity:0;pointer-events:none}
+#stage,#nav,#hint{transition:opacity 1.2s ease}
+#intro{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:radial-gradient(circle at 50% 45%,var(--base2),var(--base1));transition:opacity 1.4s ease;text-align:center;padding:20px}
+#intro.gone{opacity:0;pointer-events:none}
+.it{font-family:var(--serif);font-size:clamp(1.7rem,7vw,2.4rem);background:linear-gradient(100deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--g1);opacity:0;transition:opacity 1.2s ease;min-height:1.3em}
+.it.show{opacity:1}
+.ih{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;opacity:0;transition:opacity 1s;min-height:1.2em}
+.ih.show{opacity:.6}
+#bud{position:relative;width:200px;height:200px;opacity:0;transform:scale(.6);transition:opacity 1.4s,transform 1.4s;cursor:pointer;animation:pl 2.4s ease-in-out infinite}
+#bud.show{opacity:1;transform:scale(1)}
+@keyframes pl{50%{filter:drop-shadow(0 0 26px var(--o1))}}
+.pt{position:absolute;left:82px;top:18px;width:36px;height:82px;border-radius:50% 50% 45% 45%;background:linear-gradient(180deg,#ffd1e3,#ff7fae);transform-origin:50% 100%;transform:rotate(calc(var(--r)*.12)) scale(.34);transition:transform 1.5s cubic-bezier(.2,1.2,.3,1);box-shadow:inset 0 -6px 12px rgba(255,255,255,.35)}
+#bud.open .pt{transform:rotate(var(--r)) scale(1.15)}
+#bud.open{animation:none;filter:drop-shadow(0 0 40px var(--o1))}
+.cn{position:absolute;left:78px;top:78px;width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3b0,#ffb84d);box-shadow:0 0 22px #ffd27a}
+#flash{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:11;transition:opacity 1s}
+</style>
+</head>
+<body>
+<div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+<canvas id="cv"></canvas>
+<div id="intro"><div class="it" id="it"></div><div id="bud"><div class="pt" style="--r:0deg"></div><div class="pt" style="--r:45deg"></div><div class="pt" style="--r:90deg"></div><div class="pt" style="--r:135deg"></div><div class="pt" style="--r:180deg"></div><div class="pt" style="--r:225deg"></div><div class="pt" style="--r:270deg"></div><div class="pt" style="--r:315deg"></div><div class="cn"></div></div><div class="ih" id="ih"></div></div>
+<div id="flash"></div>
+<div id="hint">swipe ← →</div>
+<div id="stage"></div>
+<div id="nav"><button id="pv" aria-label="Previous">‹</button><div class="dots" id="dots"></div><button id="nx" aria-label="Next">›</button></div>
+<script>
+// ✏️ EDIT YOUR WORDS HERE. Change the name in FROM.
+var FROM = "Someone who cares";
+var PAL = [["#ff8fb8","#ffc2a8","#c9a7ff"],["#b79cff","#ff9fd0","#8fd3ff"],["#ffb48f","#ff8fb8","#ffe08f"],["#8fd3ff","#c9a7ff","#ff9fd0"],["#ff9fd0","#ffd1a8","#b79cff"],["#a8e6cf","#ff9fd0","#c9a7ff"],["#ffd08f","#ff8fb8","#ffb3d9"],["#c9a7ff","#8fd3ff","#ffc2d8"]];
+var P = [
+ {h:"Hey <em>Shreeya</em> 🌸", p:"Whenever you feel sad, come back here. Swipe left or right as many times as you like. It never ends, and I hope it always makes you smile.", c:0},
+ {h:"Whenever you feel sad", p:"Don't feel bad about the hard moments. Whatever happened, let it go. One bad day doesn't define you, and it takes nothing away from who you are.", c:1},
+ {h:"Everything will be alright.", p:"I promise. Hard moments always pass, and better days are already on the way. And I'm right here with you.", c:2},
+ {h:"Please don't cry.", p:"Your smile is far too precious to be spent on tears. You deserve nothing but good things and happy days.", c:3},
+ {h:"Whenever you feel like crying", p:"Come back here and read this again. Take a deep breath. Your smile is worth far more than any tear, and you are going to be okay.", c:3},
+ {h:"Whenever you feel alone", p:"You are not alone, not even for a moment. You are loved by more people than you know, and I am just a message away.", c:1},
+ {h:"Whenever you doubt yourself", p:"Remember who you are: kind, strong, graceful, and one of a kind. You are enough, exactly as you are.", c:4},
+ {h:"Whenever you feel low", p:"Close your eyes and think of one thing that makes you smile. Hold on to it. Every sad feeling is temporary, and a happy one is already on its way.", c:7},
+ {h:"You're one of a kind.", p:"Some people are different in the best way, and you are one of them. Your energy, your character, the way you are. There is truly nobody like you.", c:4},
+ {h:"Your smile", p:"It's the first thing anyone remembers about you. It's soft, it's real, and it can fix a bad day without even trying.", c:6},
+ {h:"Your heart", p:"You care deeply and you feel things honestly. That is rare. People feel safe and understood around you.", c:2},
+ {h:"Your character", p:"Calm, graceful, genuine. You don't pretend to be anyone else, and that is exactly why people are drawn to you.", c:4},
+ {h:"Your beauty", p:"It's not just your face. It's the way you carry yourself, the way you talk, the way you light up. Natural, effortless, and completely yours.", c:0},
+ {h:"What makes you special", items:["Your smile changes the mood of any room.","Your heart is genuine. You make people feel valued.","You are beautiful, inside and out.","You are simply yourself, and that is rare.","You make people feel at home around you."], c:5},
+ {h:"When you're around", p:"Things feel lighter. Conversations feel easier. Even ordinary moments become something worth remembering.", c:3},
+ {h:"Everyone loves you.", p:"The people around you are lucky to have you. Your warmth stays with them long after you leave the room.", c:6},
+ {h:"Since you came along", p:"I have felt happier in a way I can't fully explain. You are different from everyone I have ever met, and I'm grateful you exist.", c:7},
+ {h:"You make life better.", p:"Just by being you, you make the people around you happier. I am one of them. Things feel brighter since you came along.", c:1},
+ {h:"One promise", p:"On your good days and on your hard days, I'm with you. You never have to feel alone.", c:2},
+ {h:"This is for you 🌺", p:"Keep smiling, Shreeya. The world is simply better with you in it. Come back here anytime you need to. This will always be waiting for you. Tap anywhere and watch it bloom.", sign:1, c:0, garden:1}
+];
+
+var n=P.length, cur=0, busy=false, st=document.getElementById('stage'), dt=document.getElementById('dots'), fl=['🌸','🌷','🌼','🌺','🌻','💮','🪷','🌹'];
+dt.innerHTML = P.map(function(){return '<i></i>'}).join('');
+function bloom(x,y,k){for(var i=0;i<k;i++){var f=document.createElement('div');f.className='fl';f.textContent=fl[Math.random()*fl.length|0];f.style.left=(x+(Math.random()-.5)*150)+'px';f.style.top=(y+(Math.random()-.5)*150)+'px';f.style.fontSize=(24+Math.random()*34)+'px';f.style.animationDelay=Math.random()*.4+'s';document.body.appendChild(f);setTimeout(function(e){return function(){e.remove()}}(f),3600)}}
+function render(dir){
+ var s=P[cur], h='<div class="scene '+(dir>0?'iR':'iL')+'"><h1>'+s.h+'</h1>';
+ if(s.items){h+='<ul class="rs">'+s.items.map(function(x,i){return '<li style="animation-delay:'+(.35+i*.5)+'s">'+x+'</li>'}).join('')+'</ul>'}else h+='<p>'+s.p+'</p>';
+ if(s.sign)h+='<div class="sign">— '+FROM+' 🤍</div>';
+ st.innerHTML=h+'</div>';
+ var r=document.documentElement.style, c=PAL[s.c%PAL.length];r.setProperty('--o1',c[0]);r.setProperty('--o2',c[1]);r.setProperty('--o3',c[2]);
+ [].forEach.call(dt.children,function(d,i){d.className=i==cur?'on':''});
+ bloom(innerWidth/2,innerHeight/2,s.garden?28:7);
+}
+function go(d){if(busy||!document.body.classList.contains("ready"))return;busy=true;var o=st.firstChild;if(o)o.classList.add(d>0?'oL':'oR');setTimeout(function(){cur=(cur+d+n)%n;render(d);busy=false},o?280:0)}
+document.getElementById('nx').onclick=function(){go(1)};
+document.getElementById('pv').onclick=function(){go(-1)};
+addEventListener('keydown',function(e){if(e.key=='ArrowRight')go(1);if(e.key=='ArrowLeft')go(-1)});
+var sx=0,sy=0,down=false;
+document.addEventListener('pointerdown',function(e){if(e.target.closest('#nav')||!document.body.classList.contains('ready'))return;down=true;sx=e.clientX;sy=e.clientY});
+document.addEventListener('pointerup',function(e){if(!down)return;down=false;var dx=e.clientX-sx,dy=e.clientY-sy;
+ if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy))go(dx<0?1:-1);else if(Math.abs(dx)<10&&Math.abs(dy)<10)bloom(e.clientX,e.clientY,P[cur].garden?9:3)});
+render(1);
+var it=document.getElementById('it'),ih=document.getElementById('ih'),bud=document.getElementById('bud'),intro=document.getElementById('intro'),opened=false;
+function say(el,t,cb){el.classList.remove('show');setTimeout(function(){el.innerHTML=t;el.classList.add('show');if(cb)setTimeout(cb,1400)},900)}
+setTimeout(function(){say(it,'Shreeya\u2026',function(){say(it,'Whenever you feel sad,<br>this is for you.',function(){bud.classList.add('show');say(ih,'Tap the flower')})})},600);
+function openBud(){if(opened||!bud.classList.contains('show'))return;opened=true;bud.classList.add('open');ih.classList.remove('show');
+ bloom(innerWidth/2,innerHeight/2,26);
+ setTimeout(function(){document.getElementById('flash').style.opacity=.85;bloom(innerWidth/2,innerHeight/2,30)},1300);
+ setTimeout(function(){document.getElementById('flash').style.opacity=0;it.classList.remove('show')},1900);
+ setTimeout(function(){it.innerHTML='It\u2019s all for you \U0001F338';it.classList.add('show')},2500);
+ setTimeout(function(){intro.classList.add('gone');document.body.classList.add('ready');render(1)},4400);
+ setTimeout(function(){intro.style.display='none'},6000)}
+bud.addEventListener('click',openBud);intro.addEventListener('click',openBud);
+// sparkles + petals
+var cv=document.getElementById('cv'),cx=cv.getContext('2d'),S=[];
+function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();addEventListener('resize',rs);
+for(var i=0;i<46;i++)S.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:3+Math.random()*8,v:.25+Math.random()*.6,w:Math.random()*6,a:Math.random()*6,o:.25+Math.random()*.4,t:i%3==0,tw:Math.random()*6});
+(function loop(){cx.clearRect(0,0,cv.width,cv.height);S.forEach(function(p){p.y+=p.v;p.w+=.015;p.x+=Math.sin(p.w)*.5;p.a+=.01;p.tw+=.04;if(p.y>cv.height+20){p.y=-20;p.x=Math.random()*cv.width}
+ cx.save();cx.translate(p.x,p.y);
+ if(p.t){cx.globalAlpha=.35+.5*Math.abs(Math.sin(p.tw));cx.fillStyle='#fff';cx.shadowColor='#fff';cx.shadowBlur=12;cx.beginPath();cx.arc(0,0,p.r*.28,0,6.283);cx.fill()}
+ else{cx.rotate(p.a);cx.globalAlpha=p.o;cx.fillStyle='#ff9cc2';cx.beginPath();cx.ellipse(0,0,p.r,p.r*.55,0,0,6.283);cx.fill()}
+ cx.restore()});requestAnimationFrame(loop)})();
+</script>
+</body>
+</html>
